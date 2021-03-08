@@ -148,8 +148,7 @@
 body {
     background-color: white;
     margin: 0;
-    height: 200vh;
-
+    height:400vh;
 }
 
 .main {
@@ -161,7 +160,10 @@ body {
 /* } */
 
 
-
+header{
+    position:fixed;
+    width:100vw;
+}
 
 
 
