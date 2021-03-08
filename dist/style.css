@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@media(min-width:200px) {
+@media(min-width:0px) and (max-width:499px) {
     .main {
         width: 100vw;
         margin: 0 auto;
@@ -20,13 +20,14 @@
         margin: 0;
         text-align: center;
     }
+    
 
 }
 
-@media (min-width:500px) and (max-width:2000px) {
+@media (min-width:500px){
 
     header {
-        height: 40px;
+        height: 50px;
         background-color: rgb(83, 83, 83);
         margin: 0;
         text-align: center;
@@ -35,26 +36,30 @@
     .hdr-middle {
         margin: auto;
         border: solid tomato;
-        height: 40px;
+        height: 50px;
+        padding-top: 5px;
     }
 
     .hdr-left a {
         background-color: #FF6FE2;
         margin: auto;
-        margin-top: 20px;
-        margin-bottom: 15px;
         border-radius: 25px;
         color: white;
         font-family: sans-serif;
         font-weight: 500;
+        text-decoration: none;
+        
     }
 
     .hdr-left{
         border: tomato solid;
         float: left;
-        height: 40px;
-        padding: 8px 0 8px 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
     }
+
+  
 
     header section {
         display: inline-block;
@@ -85,14 +90,21 @@
         }
 
         .hdr-middle {
-            width: 73vw;
+            width: 65vw;
             float: right;
         }
+
+        .hdr-middle a{
+            font-size: 1.4rem;
+        }
+
         .hdr-left{
-            width: 23vw;
+            width: 34vw;
         }
         .hdr-left a {
-            padding: 3px 30px 3px 30px;
+            padding: 5px 42px 5px 42px;
+            font-size: 1.3rem;
+        
         
         }
 
@@ -108,18 +120,23 @@
         }
 
         .hdr-middle {
-            width: 60vw;
+            width: 50vw;
+        }
+        .hdr-middle a{
+            font-size: 1.6rem;
         }
         .hdr-left{
-            width: 18vw;
+            width: 24vw;
         }
         .hdr-left a {
-            padding: 3px 45px 3px 45px;
+            padding: 5px 55px 5px 55px;
+            font-size: 1.4rem;
+        
         
         }
     }
 
-    @media(min-width:1200px) and (max-width:2000px) {
+    @media(min-width:1200px) {
         .main {
             width: 70vw;
             margin: 0 auto;
@@ -129,16 +146,21 @@
         }
 
         .hdr-middle {
-            width: 70vw;
+            width: 60vw;
+        }
+
+        .hdr-middle a{
+            font-size: 1.7rem;
+
         }
 
         .hdr-left a {
-            padding: 3px 45px 3px 45px;
-            margin-top: 20px;
+            padding: 5px 55px 5px 55px;
+            font-size: 1.6rem;
         
         }
         .hdr-left{
-            width: 13vw;
+            width: 19vw;
         }
 
     }
