@@ -68,7 +68,7 @@
 body {
     background-color: white;
     margin: 0;
-
+    height:400vh;
 }
 
 /* .main{ */
@@ -76,7 +76,10 @@ body {
 /* } */
 
 
-
+header{
+    position:fixed;
+    width:100vw;
+}
 
 header section {
     display: inline-block;
@@ -97,21 +100,9 @@ header section:nth-of-type(2) {
     margin-right: 3vw;
 }
 
-<<<<<<< HEAD
-header #jouer{
-    position:absolute;
-    width:50px;
-    height:25px;
-    left:20px;
-    top:7px;
-    text-decoration: none;
-    color:#fff;
-    background-color: lightgrey;
-    border-radius:25px;
-=======
+
 header button{
     float: left;
     border-radius: 5px;
     background-color: #FF6FE2;
->>>>>>> 620c793348b78cbac2e2142a547dcdad43460be9
 }
