@@ -9,58 +9,138 @@
         width: 100vw;
         margin: 0 auto;
         margin-top: 0;
-        height: 100vh;
         padding: 30px;
         background-color: rgb(219, 148, 192);
-        
+
     }
+
     header {
         height: 80px;
         background-color: rgb(83, 83, 83);
         margin: 0;
         text-align: center;
     }
+
 }
 
 @media (min-width:500px) and (max-width:2000px) {
+
     header {
-        height: 35px;
+        height: 40px;
         background-color: rgb(83, 83, 83);
         margin: 0;
         text-align: center;
     }
 
-    @media(min-width:500px) {
+    .hdr-middle {
+        margin: auto;
+        border: solid tomato;
+        height: 40px;
+    }
+
+    .hdr-left a {
+        background-color: #FF6FE2;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+
+    .hdr-left{
+        border: tomato solid;
+        float: left;
+        height: 40px;
+        padding: 8px 0 8px 0;
+    }
+
+    header section {
+        display: inline-block;
+    }
+    
+    header section a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    
+    header section {
+        padding: 0.2rem;
+    }
+    
+    header section:nth-of-type(2) {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    @media(min-width:500px) and (max-width:800px) {
         .main {
             width: 100vw;
             margin: 0 auto;
             margin-top: 0;
-            height: 100vh;
             padding: 30px;
             background-color: rgb(218, 179, 169);
         }
+
+        .hdr-middle {
+            width: 73vw;
+            float: right;
+        }
+        .hdr-left{
+            width: 23vw;
+        }
+        .hdr-left a {
+            padding: 3px 30px 3px 30px;
+        
+        }
+
     }
 
-    @media(min-width:800px) {
+    @media(min-width:800px)and (max-width:1200px) {
         .main {
             width: 80vw;
             margin: 0 auto;
             margin-top: 0;
-            height: 100vh;
             padding: 30px;
             background-color: rgb(186, 216, 193);
         }
+
+        .hdr-middle {
+            width: 60vw;
+        }
+        .hdr-left{
+            width: 18vw;
+        }
+        .hdr-left a {
+            padding: 3px 45px 3px 45px;
+        
+        }
     }
 
-    @media(min-width:1200px) {
+    @media(min-width:1200px) and (max-width:2000px) {
         .main {
             width: 70vw;
             margin: 0 auto;
             margin-top: 0;
-            height: 100vh;
             padding: 30px;
             background-color: rgb(216, 216, 216);
         }
+
+        .hdr-middle {
+            width: 70vw;
+        }
+
+        .hdr-left a {
+            padding: 3px 45px 3px 45px;
+            margin-top: 20px;
+        
+        }
+        .hdr-left{
+            width: 13vw;
+        }
+
     }
 
 }
@@ -69,6 +149,10 @@ body {
     background-color: white;
     margin: 0;
     height:400vh;
+}
+
+.main {
+    height: 200vh;
 }
 
 /* .main{ */
@@ -81,28 +165,13 @@ header{
     width:100vw;
 }
 
-header section {
-    display: inline-block;
-}
-
-header section a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-header section {
-    padding: 0.2rem;
-}
-
-header section:nth-of-type(2) {
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
 
 
-header button{
-    float: left;
-    border-radius: 5px;
-    background-color: #FF6FE2;
-}
+
+/* oui */
+
+
+
+
+
+
