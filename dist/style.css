@@ -173,6 +173,12 @@ body {
     height:400vh;
 }
 
+.logo{
+    height:100vh;
+    text-align: center;
+    background-color: #BED8FA;
+}
+
 .main {
     height: 200vh;
 }
