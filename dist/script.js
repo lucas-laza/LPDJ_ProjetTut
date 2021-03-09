@@ -21,4 +21,5 @@ $(document).ready(function() {
         $(".gif").css({"filter":"blur(0px)"})
       }
        });
+       
 });
