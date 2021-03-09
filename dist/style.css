@@ -190,6 +190,7 @@ body {
     background-repeat: no-repeat;
     background-color: #BED8FA;
     border:tomato solid;
+ 
 }
 .logo{
 
@@ -204,7 +205,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition: filter 0.5s;
     
     /* background-position: absolute; */
  
@@ -251,7 +252,7 @@ body {
 /* } */
 
 
-
+/* Blur Effet*/
 
 
 
