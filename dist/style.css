@@ -217,6 +217,7 @@ body {
     justify-content: center;
     z-index: 0;
 
+    transition: filter 0.5s;
     
     /* background-position: absolute; */
  
@@ -256,7 +257,7 @@ body {
 /* } */
 
 
-
+/* Blur Effet*/
 
 
 
