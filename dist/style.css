@@ -215,7 +215,10 @@ body {
  
 }
 
-
+.blured{
+    -webkit-filter: blur(5px); 
+    filter: blur(5px);
+}
 
 .logo a{    
     width: 650px;
