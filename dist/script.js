@@ -16,9 +16,9 @@ $(document).ready(function() {
       var ScrollValueBlur=$(".blureffect").offset().top;
       console.log(ScrollValueBlur);
       if (position > ScrollValueBlur - 100){
-        $(".gif").css({"filter":"blur(4px)"})
+        $(".blurred").css({"filter":"blur(4px)"})
       }else if (position < ScrollValueBlur - 100){
-        $(".gif").css({"filter":"blur(0px)"})
+        $(".blurred").css({"filter":"blur(0px)"})
       }
        });
        
