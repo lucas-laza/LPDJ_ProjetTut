@@ -20,9 +20,6 @@
 .bg{
     width: 100vw;
     height: 100vh;
-    background: url("../img/ImgJeu/classroom.jpg");
-    background-attachment: fixed;
-    background-position: center;
 
     
 }
@@ -82,15 +79,22 @@ body {
 
 .choix1{
     position:absolute;
-    top:15%;
+    top:10%;
     left:15%;
 }
 
 .choix2{
     position:absolute;
-    top:40%;
-    left:15%
+    top:20%;
+    left:15%;
 }
+
+.choix3{
+    position: absolute;
+    top:30%;
+    left:15%;
+}
+
 .zone-txt a:hover {
     background-color: #fc9aff;
     width: 50%;
