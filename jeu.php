@@ -114,7 +114,7 @@
 
 
        if(isset($_GET["quest"])){
-        $sql = "SELECT idQ_rep1 FROM question WHERE id=:quest";
+        $sql = "SELECT idQ_rep1, idQ_rep2, idQ_rep3 FROM question WHERE id=:quest";
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         // On exécute la requête en insérant la valeur transmise en GET
@@ -122,12 +122,16 @@
         while($data = $req -> fetch()){
 
             $lien1 = $data['idQ_rep1'];
+            $lien2 = $data['idQ_rep2'];
+            $lien3 = $data['idQ_rep3'];
             // On affiche chaque résultat sous forme d'un item de la liste
         }
         $req = null;
         // On affiche l'adresse inscrite en évitant une injection de code JS
 
        }
+
+       
 
 
     
@@ -137,9 +141,9 @@
            <img class="imgProf" src="img/ImgJeu/Prof/'.$niveau. '.png" alt="">
        </div>
        <div class="zone-txt">
-           <a href="http://localhost/LPDJ_ProjetTut/jeu.php?name=michel&niveau='. $lien1 . '&quest=1#" class="choix1">'. $ReponseUno.'</a>
-           <a href="#" class="choix2">'. $ReponseDuo.'</a>
-           <a href="#" class="choix3">'. $ReponseTrio.'</a>
+           <a href="http://localhost/LPDJ_ProjetTut/jeu.php?name=michel&niveau=2&quest='. $lien1 . '#" class="choix1">'. $ReponseUno.'</a>
+           <a href="http://localhost/LPDJ_ProjetTut/jeu.php?name=michel&niveau=2&quest='. $lien2 . '#" class="choix1">'. $ReponseDuo.'</a>
+           <a href="http://localhost/LPDJ_ProjetTut/jeu.php?name=michel&niveau=2&quest='. $lien3 . '#" class="choix1">'. $ReponseTrio.'</a>
        </div>
        <div class="dialogue">
            <h1>'.$prenomprof.'</h1>
